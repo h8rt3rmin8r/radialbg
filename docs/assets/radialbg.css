@@ -1,0 +1,147 @@
+/*==========================================================
+ *        ______          _ _       _______ _____ 
+ *        | ___ \        | (_)     | | ___ \  __ \
+ *        | |_/ /__ _  __| |_  __ _| | |_/ / |  \/
+ *        |    // _` |/ _` | |/ _` | | ___ \ | __ 
+ *        | |\ \ (_| | (_| | | (_| | | |_/ / |_\ \
+ *        \_| \_\__,_|\__,_|_|\__,_|_\____/ \____/
+ *
+ *
+ *             Source Name: radialbg.css
+ *         Source Link: http://bit.ly/radialbg
+ *             Last Updated: 2020-01-22
+ *             Created By: h8rt3rmin8r
+ *
+==========================================================*/
+
+/* Dark and light radial backgrounds */
+
+.radialbg-black {
+    background: radial-gradient(circle, black, #909090);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-white {
+    background: radial-gradient(circle, #909090, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Standard radial backgrounds */
+
+.radialbg-pink {
+    background: radial-gradient(circle, #633146, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-purple {
+    background: radial-gradient(circle, #4c3163, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-blue {
+    background: radial-gradient(circle, #314863, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-cyan {
+    background: radial-gradient(circle, #315d63, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-green {
+    background: radial-gradient(circle, #316340, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-yellow {
+    background: radial-gradient(circle, #635e31, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-orange {
+    background: radial-gradient(circle, #634931, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-red {
+    background: radial-gradient(circle, #633131, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Inverted radial backgrounds */
+
+.radialbg-inv-pink {
+    background: radial-gradient(circle, black, #633146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-inv-purple {
+    background: radial-gradient(circle, black, #4c3163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-inv-blue {
+    background: radial-gradient(circle, black, #314863);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-inv-cyan {
+    background: radial-gradient(circle, black, #315d63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-inv-green {
+    background: radial-gradient(circle, black, #316340);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-inv-yellow {
+    background: radial-gradient(circle, black, #635e31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-inv-orange {
+    background: radial-gradient(circle, black, #634931);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radialbg-inv-red {
+    background: radial-gradient(circle, black, #633131);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
