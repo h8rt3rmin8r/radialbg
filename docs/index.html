@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RadialBG</title>
+    <meta name="description" content="Radial background styles for HTML">
+    <meta name="keywords" content="CSS, radial background css, HTML, coding html, how to make a radial background in CSS, css coding">
+
+    <!-- ****** FAVICONS AND BRANDING ****** -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#314863">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#314863">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/android-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#314863">
+    <meta name="apple-mobile-web-app-title" content="RadialBG">
+    <link rel="apple-touch-icon-precomposed" href="/apple-icon-precomposed.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <!-- ****** STYLESHEETS ****** -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <link rel="stylesheet" href="/assets/radialbg.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            font-size: 14px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        pre {
+            background-color: #ebebeb;
+            line-height: 1.3em;
+            font-size: 12px;
+            padding: 5px;
+            text-align: left;
+        }
+        
+        .btn-break {
+            line-height: 1.3em;
+            font-size: 12px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="card animated fadeInUp text-white" style="background-color:rgba(0, 0, 0, 0.5);">
+            <div class="card-body">
+                <div class="card-title">
+                    <h2>RadialBG Demo</h2>
+                    <hr>
+                </div>
+                <div class="card-text">
+                    <h4>Black and White</h4>
+                    <div class="btn-group" role="group" aria-label="radialbg-group-a-section-a">
+                        <a id="b01" role="button" class="btn btn-dark btn-sm">radialbg-black</a>
+                        <a id="b02" role="button" class="btn btn-dark btn-sm">radialbg-white</a>
+                    </div>
+                    <p>&nbsp;</p>
+                    <h4>Standard Colors</h4>
+                    <div class="btn-group" role="group" aria-label="radialbg-group-b-section-a">
+                        <a id="b03" role="button" class="btn btn-dark btn-sm">radialbg-pink</a>
+                        <a id="b04" role="button" class="btn btn-dark btn-sm">radialbg-purple</a>
+                    </div>
+                    <div class="btn-break"></div>
+                    <div class="btn-group" role="group" aria-label="radialbg-group-b-section-b">
+                        <a id="b05" role="button" class="btn btn-dark btn-sm">radialbg-blue</a>
+                        <a id="b06" role="button" class="btn btn-dark btn-sm">radialbg-cyan</a>
+                    </div>
+                    <div class="btn-break"></div>
+                    <div class="btn-group" role="group" aria-label="radialbg-group-b-section-c">
+                        <a id="b07" role="button" class="btn btn-dark btn-sm">radialbg-green</a>
+                        <a id="b08" role="button" class="btn btn-dark btn-sm">radialbg-yellow</a>
+                    </div>
+                    <div class="btn-break"></div>
+                    <div class="btn-group" role="group" aria-label="radialbg-group-b-section-d">
+                        <a id="b09" role="button" class="btn btn-dark btn-sm">radialbg-orange</a>
+                        <a id="b10" role="button" class="btn btn-dark btn-sm">radialbg-red</a>
+                    </div>
+                    <p>&nbsp;</p>
+                    <h4>Inverted Colors</h4>
+                    <div class="btn-group" role="group" aria-label="radialbg-group-c-section-a">
+                        <a id="b11" role="button" class="btn btn-dark btn-sm">radialbg-inv-pink</a>
+                        <a id="b12" role="button" class="btn btn-dark btn-sm">radialbg-inv-purple</a>
+                    </div>
+                    <div class="btn-break"></div>
+                    <div class="btn-group" role="group" aria-label="radialbg-group-c-section-b">
+                        <a id="b13" role="button" class="btn btn-dark btn-sm">radialbg-inv-blue</a>
+                        <a id="b14" role="button" class="btn btn-dark btn-sm">radialbg-inv-cyan</a>
+                    </div>
+                    <div class="btn-break"></div>
+                    <div class="btn-group" role="group" aria-label="radialbg-group-c-section-c">
+                        <a id="b15" role="button" class="btn btn-dark btn-sm">radialbg-inv-green</a>
+                        <a id="b16" role="button" class="btn btn-dark btn-sm">radialbg-inv-yellow</a>
+                    </div>
+                    <div class="btn-break"></div>
+                    <div class="btn-group" role="group" aria-label="radialbg-group-c-section-d">
+                        <a id="b17" role="button" class="btn btn-dark btn-sm">radialbg-inv-orange</a>
+                        <a id="b18" role="button" class="btn btn-dark btn-sm">radialbg-inv-red</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // group a - section a
+        $('#b01').click(function() {$("body").toggleClass('radialbg-black');});
+        $('#b02').click(function() {$("body").toggleClass('radialbg-white');});
+        // group b - section a
+        $('#b03').click(function() {$("body").toggleClass('radialbg-pink');});
+        $('#b04').click(function() {$("body").toggleClass('radialbg-purple');});
+        $('#b05').click(function() {$("body").toggleClass('radialbg-blue');});
+        // group b - section b
+        $('#b06').click(function() {$("body").toggleClass('radialbg-cyan');});
+        $('#b07').click(function() {$("body").toggleClass('radialbg-green');});
+        $('#b08').click(function() {$("body").toggleClass('radialbg-yellow');});
+        // group b - section c
+        $('#b09').click(function() {$("body").toggleClass('radialbg-orange');});
+        $('#b10').click(function() {$("body").toggleClass('radialbg-red');});
+        // group c - section a
+        $('#b11').click(function() {$("body").toggleClass('radialbg-inv-pink');});
+        $('#b12').click(function() {$("body").toggleClass('radialbg-inv-purple');});
+        $('#b13').click(function() {$("body").toggleClass('radialbg-inv-blue');});
+        // group c - section b
+        $('#b14').click(function() {$("body").toggleClass('radialbg-inv-cyan');});
+        $('#b15').click(function() {$("body").toggleClass('radialbg-inv-green');});
+        $('#b16').click(function() {$("body").toggleClass('radialbg-inv-yellow');});
+        // group c - section c
+        $('#b17').click(function() {$("body").toggleClass('radialbg-inv-orange');});
+        $('#b18').click(function() {$("body").toggleClass('radialbg-inv-red');});
+    </script>
+</body>
+</html>
