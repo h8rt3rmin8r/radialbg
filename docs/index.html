@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>RadialBG</title>
     <meta name="description" content="Radial background styles for HTML">
-    <meta name="keywords" content="CSS, radial background css, HTML, coding html, how to make a radial background in CSS, css coding">
+    <meta name="keywords"
+        content="CSS, radial background css, HTML, coding html, how to make a radial background in CSS, css coding">
 
     <!-- ****** FAVICONS AND BRANDING ****** -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -40,7 +42,7 @@
     <!-- ****** STYLESHEETS ****** -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
-    <link rel="stylesheet" href="/assets/radialbg.css">
+
     <style>
         html,
         body {
@@ -49,6 +51,7 @@
         }
 
         body {
+            background: black;
             font-size: 14px;
         }
 
@@ -63,18 +66,169 @@
             padding: 5px;
             text-align: left;
         }
-        
+
+        #bgTarget {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-transition: all 0.5s linear;
+            -moz-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+        }
+
+        #bgTarget.transition {
+            background: black;
+        }
+
         .btn-break {
             line-height: 1.3em;
             font-size: 12px;
             padding: 5px;
         }
     </style>
+
+    <!-- ****** RADIALBG CSS ****** <link rel="stylesheet" href="/assets/radialbg.css"> ****** -->
+
+    <style>
+        /* Dark and light radial backgrounds */
+
+        .radialbg-black {
+            background: radial-gradient(circle, black, #909090);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-white {
+            background: radial-gradient(circle, #909090, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Standard radial backgrounds */
+
+        .radialbg-pink {
+            background: radial-gradient(circle, #633146, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-purple {
+            background: radial-gradient(circle, #4c3163, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-blue {
+            background: radial-gradient(circle, #314863, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-cyan {
+            background: radial-gradient(circle, #315d63, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-green {
+            background: radial-gradient(circle, #316340, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-yellow {
+            background: radial-gradient(circle, #635e31, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-orange {
+            background: radial-gradient(circle, #634931, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-red {
+            background: radial-gradient(circle, #633131, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Inverted radial backgrounds */
+
+        .radialbg-inv-pink {
+            background: radial-gradient(circle, black, #633146);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-inv-purple {
+            background: radial-gradient(circle, black, #4c3163);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-inv-blue {
+            background: radial-gradient(circle, black, #314863);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-inv-cyan {
+            background: radial-gradient(circle, black, #315d63);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-inv-green {
+            background: radial-gradient(circle, black, #316340);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-inv-yellow {
+            background: radial-gradient(circle, black, #635e31);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-inv-orange {
+            background: radial-gradient(circle, black, #634931);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radialbg-inv-red {
+            background: radial-gradient(circle, black, #633131);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
-<body class="radialbg-black">
+
+<body id="bgTarget" class="animated fadeIn radialbg-black">
     <br>
     <div class="container">
-        <div class="card animated fadeInUp text-white" style="background-color:rgba(0, 0, 0, 0.5);">
+        <div class="card animated bounceInUp text-white" style="background-color:rgba(0, 0, 0, 0.5);">
             <div class="card-body">
                 <div class="card-title">
                     <h2>RadialBG Demo</h2>
@@ -83,84 +237,161 @@
                 <div class="card-text">
                     <h4>Black and White</h4>
                     <div class="btn-group" role="group" aria-label="radialbg-group-a-section-a">
-                        <a id="b01" role="button" class="btn btn-dark btn-sm">radialbg-black</a>
-                        <a id="b02" role="button" class="btn btn-dark btn-sm">radialbg-white</a>
+                        <a id="b01" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-black");'>black</a>
+                        <a id="b02" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-white");'>white</a>
                     </div>
                     <p>&nbsp;</p>
                     <h4>Standard Colors</h4>
                     <div class="btn-group" role="group" aria-label="radialbg-group-b-section-a">
-                        <a id="b03" role="button" class="btn btn-dark btn-sm">radialbg-pink</a>
-                        <a id="b04" role="button" class="btn btn-dark btn-sm">radialbg-purple</a>
+                        <a id="b03" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-pink");'>pink</a>
+                        <a id="b04" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-purple");'>purple</a>
+                        <a id="b05" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-blue");'>blue</a>
+                        <a id="b06" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-cyan");'>cyan</a>
                     </div>
                     <div class="btn-break"></div>
                     <div class="btn-group" role="group" aria-label="radialbg-group-b-section-b">
-                        <a id="b05" role="button" class="btn btn-dark btn-sm">radialbg-blue</a>
-                        <a id="b06" role="button" class="btn btn-dark btn-sm">radialbg-cyan</a>
-                    </div>
-                    <div class="btn-break"></div>
-                    <div class="btn-group" role="group" aria-label="radialbg-group-b-section-c">
-                        <a id="b07" role="button" class="btn btn-dark btn-sm">radialbg-green</a>
-                        <a id="b08" role="button" class="btn btn-dark btn-sm">radialbg-yellow</a>
-                    </div>
-                    <div class="btn-break"></div>
-                    <div class="btn-group" role="group" aria-label="radialbg-group-b-section-d">
-                        <a id="b09" role="button" class="btn btn-dark btn-sm">radialbg-orange</a>
-                        <a id="b10" role="button" class="btn btn-dark btn-sm">radialbg-red</a>
+                        <a id="b07" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-green");'>green</a>
+                        <a id="b08" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-yellow");'>yellow</a>
+                        <a id="b09" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-orange");'>orange</a>
+                        <a id="b10" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-red");'>red</a>
                     </div>
                     <p>&nbsp;</p>
                     <h4>Inverted Colors</h4>
                     <div class="btn-group" role="group" aria-label="radialbg-group-c-section-a">
-                        <a id="b11" role="button" class="btn btn-dark btn-sm">radialbg-inv-pink</a>
-                        <a id="b12" role="button" class="btn btn-dark btn-sm">radialbg-inv-purple</a>
+                        <a id="b11" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-inv-pink");'>inv-pink</a>
+                        <a id="b12" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-inv-purple");'>inv-purple</a>
+                        <a id="b13" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-inv-blue");'>inv-blue</a>
+                        <a id="b14" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-inv-cyan");'>inv-cyan</a>
                     </div>
                     <div class="btn-break"></div>
                     <div class="btn-group" role="group" aria-label="radialbg-group-c-section-b">
-                        <a id="b13" role="button" class="btn btn-dark btn-sm">radialbg-inv-blue</a>
-                        <a id="b14" role="button" class="btn btn-dark btn-sm">radialbg-inv-cyan</a>
-                    </div>
-                    <div class="btn-break"></div>
-                    <div class="btn-group" role="group" aria-label="radialbg-group-c-section-c">
-                        <a id="b15" role="button" class="btn btn-dark btn-sm">radialbg-inv-green</a>
-                        <a id="b16" role="button" class="btn btn-dark btn-sm">radialbg-inv-yellow</a>
-                    </div>
-                    <div class="btn-break"></div>
-                    <div class="btn-group" role="group" aria-label="radialbg-group-c-section-d">
-                        <a id="b17" role="button" class="btn btn-dark btn-sm">radialbg-inv-orange</a>
-                        <a id="b18" role="button" class="btn btn-dark btn-sm">radialbg-inv-red</a>
+                        <a id="b15" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-inv-green");'>inv-green</a>
+                        <a id="b16" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-inv-yellow");'>inv-yellow</a>
+                        <a id="b17" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-inv-orange");'>inv-orange</a>
+                        <a id="b18" role="button" class="btn btn-dark btn-sm" href='javascript:;'
+                            onclick='bgTransition("radialbg-inv-red");'>inv-red</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <script>
-        // group a - section a
-        $('#b01').click(function() {$("body").toggleClass('radialbg-black');});
-        $('#b02').click(function() {$("body").toggleClass('radialbg-white');});
-        // group b - section a
-        $('#b03').click(function() {$("body").toggleClass('radialbg-pink');});
-        $('#b04').click(function() {$("body").toggleClass('radialbg-purple');});
-        $('#b05').click(function() {$("body").toggleClass('radialbg-blue');});
-        // group b - section b
-        $('#b06').click(function() {$("body").toggleClass('radialbg-cyan');});
-        $('#b07').click(function() {$("body").toggleClass('radialbg-green');});
-        $('#b08').click(function() {$("body").toggleClass('radialbg-yellow');});
-        // group b - section c
-        $('#b09').click(function() {$("body").toggleClass('radialbg-orange');});
-        $('#b10').click(function() {$("body").toggleClass('radialbg-red');});
-        // group c - section a
-        $('#b11').click(function() {$("body").toggleClass('radialbg-inv-pink');});
-        $('#b12').click(function() {$("body").toggleClass('radialbg-inv-purple');});
-        $('#b13').click(function() {$("body").toggleClass('radialbg-inv-blue');});
-        // group c - section b
-        $('#b14').click(function() {$("body").toggleClass('radialbg-inv-cyan');});
-        $('#b15').click(function() {$("body").toggleClass('radialbg-inv-green');});
-        $('#b16').click(function() {$("body").toggleClass('radialbg-inv-yellow');});
-        // group c - section c
-        $('#b17').click(function() {$("body").toggleClass('radialbg-inv-orange');});
-        $('#b18').click(function() {$("body").toggleClass('radialbg-inv-red');});
+        function sleep(ms) {
+            /* General "sleep" function
+             *
+             * USAGE:
+             *
+             *    sleep(<MS>).then(() => {<STUFF>});
+             * 
+             *     where "MS" is a number of microseconds, and where "STUFF" is
+             *     an action to execute after "MS" (amount of time) has expired
+             * 
+            */
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function lastClassFindRemove() {
+            /* Find and remove the last class tag attached to the element with
+             * an id of "bgTarget".
+             *
+             * USAGE:
+             * 
+             *   lastClassFindRemove();
+             *
+            */
+            function lastClassRemove(rmClass) {
+                // remove an input class from the element with an id "bgTarget"
+                var element = document.getElementById("bgTarget");
+                    element.classList.remove(rmClass);
+            }
+            // find the last class property of the body tag
+            var classStr = $('#bgTarget').attr('class'),
+                lastClass = classStr.substr( classStr.lastIndexOf(' ') + 1);
+            // remove the target class
+            lastClassRemove(lastClass);
+        }
+        
+        function bgFadeOutRun() {
+            /* Append the "transition" class to the HTML element with an id
+             * of "bgTarget" (causes fade-out).
+             *
+             * Requires the following CSS to be defined:
+             *   #bgTarget {
+             *     display: flex;
+             *     justify-content: center;
+             *     align-items: center;
+             *     -webkit-transition: all 1s linear;
+             *     -moz-transition: all 1s linear;
+             *     -o-transition: all 1s linear;
+             *     transition: all 1s linear;
+             *  }
+             *
+             *  #bgTarget.transition {
+             *    background: black;
+             *  }
+             * 
+             * USAGE:
+             * 
+             *   bgFadeOutRun();
+             * 
+            */
+            $("#bgTarget").toggleClass("transition");
+        }
+
+        function bgFadeIn(newClass) {
+            /* Replace "transition" class with an unknown input class
+             *
+             * USAGE:
+             * 
+             *   bgFadeIn(<newClass>);
+             * 
+             *   where "newClass" is the new class tag to substitute in
+             *   as a replacement for the class tag "transition".
+            */
+            var element = document.getElementById("bgTarget");
+                element.className = element.className.replace(/\btransition\b/g, newClass);
+        }
+
+        function bgTransition(pendClass) {
+            /* Transition the class of the element with an id of "bgTarget" to
+             * an unknown input class name ("pendClass").
+             * 
+             * USAGE:
+             * 
+             *   onclick='bgTransition("<pendClass>");'
+             * 
+             *   where "pendClass" is a new class name to transition into
+            */
+            lastClassFindRemove();
+            sleep(200).then(() => {bgFadeOutRun();});
+            sleep(900).then(() => {bgFadeIn(pendClass);});
+
+        }
     </script>
 </body>
+
 </html>
