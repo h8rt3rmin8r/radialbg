@@ -39,17 +39,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <style>
-        html,
-        body {height: 100%;overflow: hidden;}
-        body {background: black;font-size: 14px;}
-        p {text-align: left;}
-        pre {background-color: #ebebeb;line-height: 1.3em;font-size: 12px;padding: 5px;text-align: left;}
+        html,body {height: 100%;overflow: hidden;}
+        body {background: black;}
+        p {text-align: left; line-height:0.8em;}
+        h3 {text-transform: uppercase;font-size: 18px;color: #36679e}
+        hr {border-width:1px;border-color:#fff}
         #bgTarget {display: flex;justify-content: center;align-items: center;-webkit-transition: all 0.5s linear;-moz-transition: all 0.5s linear;-o-transition: all 0.5s linear;transition: all 0.5s linear;}
         #bgTarget.transition {background: black;}
         .btn-break {line-height: 1.3em;font-size: 12px;padding: 5px;}
+        .btn {display: block; font-family: monospace; white-space: pre;}
     </style>
     <!-- ****** RADIALBG CSS ****** -->
-    <link rel="stylesheet" href="assets/radialbg.css">
+    <link rel="stylesheet" href="https://h8rt3rmin8r.github.io/radialbg/assets/radialbg.css">
 </head>
 <body id="bgTarget" class="animated fadeIn radialbg-black">
     <br>
@@ -57,17 +58,23 @@
         <div class="card animated bounceInUp text-white" style="background-color:rgba(0, 0, 0, 0.5);">
             <div class="card-body">
                 <div class="card-title">
-                    <h2>RadialBG Demo</h2>
+                    <h2>RadialBG CSS Demo</h2>
+                    <p>Radial background styles for HTML</p>
+                    <p>View the repository on <a href="https://www.github.com/h8rt3rmin8r/radialbg/">Github</a></p>
+                    <p></p>
                     <hr>
+                    <p>&nbsp;</p>
+                    <p>Click the buttons below to preview the available background styles</p>
+                    <br>
                 </div>
                 <div class="card-text">
-                    <h4>Black and White</h4>
+                    <h3>Black and White</h3>
                     <div class="btn-group" role="group" aria-label="radialbg-group-a-section-a">
                         <a id="b01" role="button" class="btn btn-dark btn-sm" href='javascript:;' onclick='bgTransition("radialbg-black");'>black</a>
                         <a id="b02" role="button" class="btn btn-dark btn-sm" href='javascript:;' onclick='bgTransition("radialbg-white");'>white</a>
                     </div>
                     <p>&nbsp;</p>
-                    <h4>Standard Colors</h4>
+                    <h3>Standard Colors</h3>
                     <div class="btn-group" role="group" aria-label="radialbg-group-b-section-a">
                         <a id="b03" role="button" class="btn btn-dark btn-sm" href='javascript:;' onclick='bgTransition("radialbg-pink");'>pink</a>
                         <a id="b04" role="button" class="btn btn-dark btn-sm" href='javascript:;' onclick='bgTransition("radialbg-purple");'>purple</a>
@@ -82,7 +89,7 @@
                         <a id="b10" role="button" class="btn btn-dark btn-sm" href='javascript:;' onclick='bgTransition("radialbg-red");'>red</a>
                     </div>
                     <p>&nbsp;</p>
-                    <h4>Inverted Colors</h4>
+                    <h3>Inverted Colors</h3>
                     <div class="btn-group" role="group" aria-label="radialbg-group-c-section-a">
                         <a id="b11" role="button" class="btn btn-dark btn-sm" href='javascript:;' onclick='bgTransition("radialbg-inv-pink");'>inv-pink</a>
                         <a id="b12" role="button" class="btn btn-dark btn-sm" href='javascript:;' onclick='bgTransition("radialbg-inv-purple");'>inv-purple</a>
@@ -96,6 +103,8 @@
                         <a id="b17" role="button" class="btn btn-dark btn-sm" href='javascript:;' onclick='bgTransition("radialbg-inv-orange");'>inv-orange</a>
                         <a id="b18" role="button" class="btn btn-dark btn-sm" href='javascript:;' onclick='bgTransition("radialbg-inv-red");'>inv-red</a>
                     </div>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
         </div>
